@@ -22,9 +22,9 @@ class WMD(ModelInterface):
         :param pair_dict:
         """
         self.w2vmodel = word2vec.Word2Vec.load_model()  # word-to-vec model used to convert
-        self.test_data = test_data
-        self.sent_dict = sent_dict
-        self.pair_dict = pair_dict
+        #self.test_data = test_data
+        #self.sent_dict = sent_dict
+        #self.pair_dict = pair_dict
 
     def compute_pair_sim(self, tok_lst1, tok_lst2) -> float:
         """
@@ -45,7 +45,6 @@ class WMD(ModelInterface):
         :return:
         """
         scores_dict = {}
-
         for id in candidates.keys():
             scores_dict[id] = self.compute_pair_sim(target, candidates[id])
         return sorted(scores_dict, key=scores_dict.get)
@@ -57,7 +56,7 @@ class WMD(ModelInterface):
         """
         return wmd_utils.compute_scores_dict(candidates, self.w2vmodel)
 
-    def evaluate_model(self, candidates: dict) -> float:
+    def evaluate_model(self, candidates: dict, pair_dict: dict) -> float:
         """
         Computes the percentage of queries that are matched successfully to their closest queries.
 
@@ -71,17 +70,17 @@ class WMD(ModelInterface):
             try:
                 all_scores = scores_dict[k]
                 match = min(all_scores, key=all_scores.get)
-                print("Matching " + k + " " + match)
+                print("Matching " + k + " to " + match)
                 print("\tSorted from closest to farthest: " +
                       ' '.join([str(elem) for elem in sorted(all_scores, key=all_scores.get)]))
-                if match == self.pair_dict[k]:
+                if match == pair_dict[k]:
                     correct += 1
             except KeyError:
                 continue
         accuracy = correct / len(scores_dict)
         # TODO get rid of side-effects
-        print("Accuracy %f" % accuracy)
+        print("Accuracy: %.4f" % accuracy)
         # your code
         elapsed_time = time.time() - start_time
-        print("Evaluation time cost: %f" % elapsed_time)
+        print("It took %.2f sec to evaluate the model" % elapsed_time)
         return accuracy

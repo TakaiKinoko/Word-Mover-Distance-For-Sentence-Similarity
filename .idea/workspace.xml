@@ -125,11 +125,12 @@
       <change beforePath="$PROJECT_DIR$/../hw3_Q1/src/main/java/pair/Pair.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw3_Q1/src/main/java/test" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/imodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/imodel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/utils/wmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/utils/wmd_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/utils/word2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/utils/word2vec.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/wmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/wmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocess/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/query.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/msr_para_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/msr_para_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../v4-master/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../v4-master/.eslintrc" beforeDir="false" />
@@ -575,7 +576,7 @@
       <workItem from="1584224972506" duration="12913000" />
       <workItem from="1584292384636" duration="5597000" />
       <workItem from="1584375658143" duration="12048000" />
-      <workItem from="1584458969897" duration="10845000" />
+      <workItem from="1584458969897" duration="12903000" />
     </task>
     <servers />
   </component>

@@ -14,16 +14,11 @@ from itertools import product, combinations
 from models.utils.utils import tokens_to_fracdict, get_token_list
 
 
-def compute_scores_dict(sent_dict, w2vmodel):
+def sent_dict_to_tok_dict(sent_dict):
     """
-    Given a dict from sentence ID to sentence token list, return a dict that maps from any sentence of ID1 in the
-    candidates_dict to a dict that maps all sentence of ID2 that is not ID1 to a float that represents the
-    word mover distance between ID1 and ID2.
 
-    :param sent_dict: a dict of sentences mapping its id to its list of tokens
-    :param w2vmodel: word-to-vec model
-    :return: a dict mapping sentence id to a list of scores (wmd) with all sentences from the candidates_dict
-            except for itself
+    :param sent_dict: a dict mapping sentence IDs to their string representations
+    :return: a dict mapping sentence IDs to their list of tokens
     """
     # map ID to cleaned sentences
     cleaned_sent_dict = {}
@@ -32,9 +27,23 @@ def compute_scores_dict(sent_dict, w2vmodel):
             cleaned_sent_dict[k] = get_token_list(sent_dict[k])
         except TypeError:
             continue
+    return cleaned_sent_dict
+
+
+def compute_scores_dict(candidates_dict, w2vmodel):
+    """
+    Given a dict from sentence ID to sentence token list, return a dict that maps from any sentence of ID1 in the
+    candidates_dict to a dict that maps all sentence of ID2 that is not ID1 to a float that represents the
+    word mover distance between ID1 and ID2.
+
+    :param candidates_dict: a dict of sentences mapping its id to its list of tokens
+    :param w2vmodel: word-to-vec model
+    :return: a dict mapping sentence id to a list of scores (wmd) with all sentences from the candidates_dict
+            except for itself
+    """
     # compute scores for the cartesian product of all sentences
     # THE FUNCTION BELOW TAKES VERY LONG, WILL REPORT PROGRESS
-    return compute_scores_batch(cleaned_sent_dict, w2vmodel)
+    return compute_scores_batch(candidates_dict, w2vmodel)
     # self.match_dict = self.match_each_sent(cleaned_sent_dict)
     # evaluate accuracy
     # print("Accuracy %f" % (self.evaluate_wmd_model()))

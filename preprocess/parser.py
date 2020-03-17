@@ -11,7 +11,9 @@ from preprocess import converter
 """
 Functions related to parsing of the test data
 """
-def parse(data_path = constants.msr_para_test_path, delimiter = '\t'):
+
+
+def parse(data_path=constants.msr_para_test_path, delimiter='\t'):
     """
     Define MSR data path and read into tsv into data
     """

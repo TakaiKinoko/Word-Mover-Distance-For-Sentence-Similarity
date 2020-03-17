@@ -11,11 +11,11 @@ Right now just using Pandas to read from and save to a csv file
 
 @author: Fang
 """
-import pandas as pd
-
-class DataBase:
-    def __init__(self, name):
-        queries = pd.read_csv('data/query_start.csv')
+# import pandas as pd
+#
+# class DataBase:
+#     def __init__(self, name):
+#         queries = pd.read_csv('data/query_start.csv')
 
 """
 HOW TO USE SQLITE
