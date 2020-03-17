@@ -34,7 +34,9 @@ class ModelMeta(type):
                 hasattr(subclass, 'compute_sim_list') and
                 callable(subclass.compute_sim_list) and
                 hasattr(subclass, 'compute_sim_list_batch') and
-                callable(subclass.compute_sim_list_batch))
+                callable(subclass.compute_sim_list_batch) and
+                hasattr(subclass, 'evaluate_model') and
+                callable(subclass.evaluate_model))
 
 
 class ModelInterface(metaclass=ModelMeta):

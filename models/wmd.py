@@ -4,9 +4,10 @@
 # Author: Fang Han <fang@buymecoffee.co>
 
 from models.utils import word2vec
-from models.utils.wmd_utils import compute_scores_dict
+from models.utils import wmd_utils
 from interface.imodel import ModelInterface
 import time
+
 
 class WMD(ModelInterface):
     """
@@ -26,15 +27,37 @@ class WMD(ModelInterface):
         self.pair_dict = pair_dict
 
     def compute_pair_sim(self, tok_lst1, tok_lst2) -> float:
-        pass
+        """
+        Compute the word mover distance of two sentences represented as list of tokens
+        :param tok_lst1: one sentence represented as a list of tokens which has been removed of stop words
+        :param tok_lst2: another sentence represented as a list of tokens which has been removed of stop words
+        :return: a float in the range of [0, +infinity), which is the word mover distance of the two sentences.
+                 a smaller distance indicates stronger similarity between tok_lst1 and tok_lst2.
+        """
+        return wmd_utils.word_mover_distance_probspec(tok_lst1, tok_lst2, self.w2vmodel)
 
-    def compute_sim_list(self, target: list, candidate: dict) -> list:
-        pass
+    def compute_sim_list(self, target: list, candidates: dict) -> list:
+        """
+        TODO : untested
+        Compute the word mover distance between target and every
+        :param target: target sentence, which is a token list.
+        :param candidates: a dict mapping unique sentence IDs to their corresponding token list.
+        :return:
+        """
+        scores_dict = {}
+
+        for id in candidates.keys():
+            scores_dict[id] = self.compute_pair_sim(target, candidates[id])
+        return sorted(scores_dict, key=scores_dict.get)
 
     def compute_sim_list_batch(self, candidates: dict) -> dict:
-        pass
+        """
+        :param candidates: a dict mapping unique sentence IDs to their corresponding token list.
+        :return:
+        """
+        return wmd_utils.compute_scores_dict(candidates, self.w2vmodel)
 
-    def evaluate_wmd_model(self):
+    def evaluate_model(self, candidates: dict) -> float:
         """
         Computes the percentage of queries that are matched successfully to their closest queries.
 
@@ -42,7 +65,7 @@ class WMD(ModelInterface):
         """
         start_time = time.time()
         correct = 0 # number of correctly predicted matches
-        scores_dict = compute_scores_dict(self.sent_dict, self.w2vmodel)
+        scores_dict = self.compute_sim_list_batch(candidates)
 
         for k in scores_dict.keys():
             try:
@@ -60,5 +83,5 @@ class WMD(ModelInterface):
         print("Accuracy %f" % accuracy)
         # your code
         elapsed_time = time.time() - start_time
-        print("Evaluation time cost: %f"%elapsed_time)
+        print("Evaluation time cost: %f" % elapsed_time)
         return accuracy

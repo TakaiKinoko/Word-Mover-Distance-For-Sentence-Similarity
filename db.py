@@ -1,3 +1,8 @@
+# Semantic Similarity Library:
+#
+# Copyright (C) 2019-2020 MotleyWorks
+# Author: Fang Han <fang@buymecoffee.co>
+
 """
 Utility Class that provides abstraction for the installation, initialization of database, as well as the insertion and
 retrieval of query data.

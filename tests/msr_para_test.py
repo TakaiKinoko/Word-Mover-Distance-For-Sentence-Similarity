@@ -40,7 +40,7 @@ class TestWMD:
         test_data, sent_dict, pair_dict = parse()
         # word mover model -- take long to load the model!
         wm_model = WMD(test_data, sent_dict, pair_dict)
-        wm_model.evaluate_wmd_model()
+        wm_model.evaluate_model(sent_dict)
 
 
 class TestBaseline:
