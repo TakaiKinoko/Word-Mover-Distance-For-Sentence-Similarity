@@ -2,8 +2,8 @@
 
 @author: Fang
 """
-from models.utils import get_token_list
-from models.baseline_utils import compute_scores_batch
+from models.utils.utils import get_token_list
+from models.utils.baseline_utils import compute_scores_batch
 
 
 class Baseline:

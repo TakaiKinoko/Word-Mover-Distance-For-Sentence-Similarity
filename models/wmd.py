@@ -1,36 +1,38 @@
-from models import word2vec
-from models.wmd_utils import compute_scores_batch
-from models.utils import get_token_list
+# Semantic Similarity Library: Word-Mover-Distance model
+#
+# Copyright (C) 2019-2020 MotleyWorks
+# Author: Fang Han <fang@buymecoffee.co>
 
+from models.utils import word2vec
+from models.utils.wmd_utils import compute_scores_dict
+from interface.imodel import ModelInterface
+import time
 
-class WMD:
+class WMD(ModelInterface):
     """
     Word-Mover-Distance model
     """
     def __init__(self, test_data, sent_dict, pair_dict):
         """
-        Default constructor that initializes a word-to-vec model which is used to
+        Default constructor of the Word-Mover-Distance model
+
+        :param test_data:
+        :param sent_dict:
+        :param pair_dict:
         """
         self.w2vmodel = word2vec.Word2Vec.load_model()  # word-to-vec model used to convert
         self.test_data = test_data
         self.sent_dict = sent_dict
         self.pair_dict = pair_dict
 
-    def compute_scores_dict(self):
-        # map ID to cleaned sentences
-        cleaned_sent_dict = {}
-        for k in self.sent_dict.keys(): # ID to sentences
-            try:
-                cleaned_sent_dict[k] = get_token_list(self.sent_dict[k])
-            except TypeError:
-                continue
-        # compute scores for the cartesian product of all sentences
-        # THE FUNCTION BELOW TAKES VERY LONG, WILL REPORT PROGRESS
-        return compute_scores_batch(cleaned_sent_dict, self.w2vmodel)
-        #self.match_dict = self.match_each_sent(cleaned_sent_dict)
-        # evaluate accuracy
-        #print("Accuracy %f" % (self.evaluate_wmd_model()))
+    def compute_pair_sim(self, tok_lst1, tok_lst2) -> float:
+        pass
 
+    def compute_sim_list(self, target: list, candidate: dict) -> list:
+        pass
+
+    def compute_sim_list_batch(self, candidates: dict) -> dict:
+        pass
 
     def evaluate_wmd_model(self):
         """
@@ -38,8 +40,9 @@ class WMD:
 
         :return: percentage of correctly predicted matches
         """
+        start_time = time.time()
         correct = 0 # number of correctly predicted matches
-        scores_dict = self.compute_scores_dict()
+        scores_dict = compute_scores_dict(self.sent_dict, self.w2vmodel)
 
         for k in scores_dict.keys():
             try:
@@ -52,6 +55,10 @@ class WMD:
                     correct += 1
             except KeyError:
                 continue
-        #return correct / len(self.scores_dict)
         accuracy = correct / len(scores_dict)
+        # TODO get rid of side-effects
         print("Accuracy %f" % accuracy)
+        # your code
+        elapsed_time = time.time() - start_time
+        print("Evaluation time cost: %f"%elapsed_time)
+        return accuracy

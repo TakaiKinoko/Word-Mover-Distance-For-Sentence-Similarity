@@ -1,3 +1,8 @@
+# Semantic Similarity Library: Word-To-Vec model for computing word embeddings
+#
+# Copyright (C) 2019-2020 MotleyWorks
+# Author: Fang Han <fang@buymecoffee.co>
+
 """
 
 """

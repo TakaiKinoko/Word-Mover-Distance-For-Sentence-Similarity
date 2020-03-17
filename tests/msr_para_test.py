@@ -1,3 +1,8 @@
+# Semantic Similarity Library: Microsoft paraphrase dataset test
+#
+# Copyright (C) 2019-2020 MotleyWorks
+# Author: Fang Han <fang@buymecoffee.co>
+
 """
 Measure performance of the word-mover-distance model on Microsoft Research Paraphrase Corpus (MSR data for short)
 
@@ -14,7 +19,7 @@ Performance metrics:
 
 from models.baseline import Baseline
 from models.wmd import WMD
-from preprocess.utils import parse
+from preprocess.parser import parse
 
 
 class TestWMD:
