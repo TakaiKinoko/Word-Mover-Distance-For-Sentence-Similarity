@@ -1,0 +1,152 @@
+/usr/local/bin/python3.7 /Applications/Development/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevconsole.py --mode=client --port=64676
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/Users/fh/Projects/motleyWorks/WMD'])
+Python 3.7.5 (default, Nov  1 2019, 02:16:23)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.10.2 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 7.10.2
+Python 3.7.5 (default, Nov  1 2019, 02:16:23)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+runfile('/Users/fh/Projects/motleyWorks/WMD/tests/msr_para_test.py', wdir='/Users/fh/Projects/motleyWorks/WMD/tests')
+Test data loaded
+word to vec model loaded
+wmd computation completed: 1.49
+wmd computation completed: 2.98
+wmd computation completed: 4.46
+wmd computation completed: 5.95
+wmd computation completed: 7.44
+wmd computation completed: 8.93
+wmd computation completed: 10.42
+wmd computation completed: 11.90
+wmd computation completed: 13.39
+wmd computation completed: 14.88
+wmd computation completed: 16.37
+wmd computation completed: 17.86
+wmd computation completed: 19.35
+wmd computation completed: 20.83
+wmd computation completed: 22.32
+wmd computation completed: 23.81
+wmd computation completed: 25.30
+wmd computation completed: 26.79
+wmd computation completed: 28.27
+wmd computation completed: 29.76
+wmd computation completed: 31.25
+wmd computation completed: 32.74
+wmd computation completed: 34.23
+wmd computation completed: 35.71
+wmd computation completed: 37.20
+wmd computation completed: 38.69
+wmd computation completed: 40.18
+wmd computation completed: 41.67
+wmd computation completed: 43.15
+wmd computation completed: 44.64
+wmd computation completed: 46.13
+wmd computation completed: 47.62
+wmd computation completed: 49.11
+wmd computation completed: 50.60
+wmd computation completed: 52.08
+wmd computation completed: 53.57
+wmd computation completed: 55.06
+wmd computation completed: 56.55
+wmd computation completed: 58.04
+wmd computation completed: 59.52
+wmd computation completed: 61.01
+wmd computation completed: 62.50
+wmd computation completed: 63.99
+wmd computation completed: 65.48
+wmd computation completed: 66.96
+wmd computation completed: 68.45
+wmd computation completed: 69.94
+wmd computation completed: 71.43
+wmd computation completed: 72.92
+wmd computation completed: 74.40
+wmd computation completed: 75.89
+wmd computation completed: 77.38
+wmd computation completed: 78.87
+wmd computation completed: 80.36
+wmd computation completed: 81.85
+wmd computation completed: 83.33
+wmd computation completed: 84.82
+wmd computation completed: 86.31
+wmd computation completed: 87.80
+wmd computation completed: 89.29
+wmd computation completed: 90.77
+wmd computation completed: 92.26
+wmd computation completed: 93.75
+wmd computation completed: 95.24
+wmd computation completed: 96.73
+wmd computation completed: 98.21
+wmd computation completed: 99.70
+Accuracy 0.989583
+
+
+Test data loaded
+679 test items loaded.
+Baseline computation completed: 1.49
+Baseline computation completed: 2.98
+Baseline computation completed: 4.46
+Baseline computation completed: 5.95
+Baseline computation completed: 7.44
+Baseline computation completed: 8.93
+Baseline computation completed: 10.42
+Baseline computation completed: 11.90
+Baseline computation completed: 13.39
+Baseline computation completed: 14.88
+Baseline computation completed: 16.37
+Baseline computation completed: 17.86
+Baseline computation completed: 19.35
+Baseline computation completed: 20.83
+Baseline computation completed: 22.32
+Baseline computation completed: 23.81
+Baseline computation completed: 25.30
+Baseline computation completed: 26.79
+Baseline computation completed: 28.27
+Baseline computation completed: 29.76
+Baseline computation completed: 31.25
+Baseline computation completed: 32.74
+Baseline computation completed: 34.23
+Baseline computation completed: 35.71
+Baseline computation completed: 37.20
+Baseline computation completed: 38.69
+Baseline computation completed: 40.18
+Baseline computation completed: 41.67
+Baseline computation completed: 43.15
+Baseline computation completed: 44.64
+Baseline computation completed: 46.13
+Baseline computation completed: 47.62
+Baseline computation completed: 49.11
+Baseline computation completed: 50.60
+Baseline computation completed: 52.08
+Baseline computation completed: 53.57
+Baseline computation completed: 55.06
+Baseline computation completed: 56.55
+Baseline computation completed: 58.04
+Baseline computation completed: 59.52
+Baseline computation completed: 61.01
+Baseline computation completed: 62.50
+Baseline computation completed: 63.99
+Baseline computation completed: 65.48
+Baseline computation completed: 66.96
+Baseline computation completed: 68.45
+Baseline computation completed: 69.94
+Baseline computation completed: 71.43
+Baseline computation completed: 72.92
+Baseline computation completed: 74.40
+Baseline computation completed: 75.89
+Baseline computation completed: 77.38
+Baseline computation completed: 78.87
+Baseline computation completed: 80.36
+Baseline computation completed: 81.85
+Baseline computation completed: 83.33
+Baseline computation completed: 84.82
+Baseline computation completed: 86.31
+Baseline computation completed: 87.80
+Baseline computation completed: 89.29
+Baseline computation completed: 90.77
+Baseline computation completed: 92.26
+Baseline computation completed: 93.75
+Baseline computation completed: 95.24
+Baseline computation completed: 96.73
+Baseline computation completed: 98.21
+Baseline computation completed: 99.70
+Accuracy 0.983631
