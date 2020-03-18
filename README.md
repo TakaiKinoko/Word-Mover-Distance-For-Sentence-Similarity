@@ -1,18 +1,30 @@
 # Semantic Similarity Comparision For Textual Data Toolkit
 
+## Configure Your GloVe path
+`glove.840B.300d.txt` is our current choice of word embeddings. 
+It's too big to be uploaded onto github, so please configure it locally following these two steps:
+1. download the `glove.840B.300d.txt` file from [here](https://nlp.stanford.edu/projects/glove/).
+1. update the two variables below in `constants.py` with the path to your local copy of `glove.840B.300d.txt`
+```python
+gloVe_path = '<your-path>/glove.840B.300d.txt'
+gloVe_tmp_path = "<your-path>/glove_word2vec.txt"
+```
+
 ## Usage Demo
 
 ### 1. load data from file
-#### pre-requisites
+#### Pre-requisites
 This step makes two assumptions about the data file you're passing in: 
 - It has the same schema as the [Microsoft Research Paraphrase Corpus](https://www.microsoft.com/en-us/download/details.aspx?id=52398), which is: 
 
 | Quality | #1 ID  |  #2 ID | #1 String | #2 String |
 | ------- | ------ |:------:| ---------:| ---------:|
+|1| 2760337|2760373|The increase reflects lower credit losses and favorable interest rates.|The gain came as a result of fewer credit losses and lower interest rates.|
+|0|149718|149404|Last year, Comcast signed 1.5 million new digital cable subscribers.| Comcast has about 21.3 million cable subscribers, many in the largest U.S. cities.|
 
 - It's of format: `csv` or `tsv`.
 
-#### demo
+#### Demo
 If you simply want to read the file into a Pandas dataframe, do this:
 ```python
 from preprocess.parser import load_data
@@ -44,7 +56,7 @@ or you can process your data according to the steps talked about below. Our mode
 to work. They exist simply to make testing easier.
 
 ### 2. data processing
-It's far more likely that the data you have is a dictionary mapping some sort of unique IDs to strings. To ensure that
+It's far more likely that the data you have is a hashmap (python dict) mapping some sort of unique IDs to strings. To ensure that
 your data is compatible with the models, only one simple step needs to be taken:
 
 - Assuming you already have a python dict called `sent_dict` that maps IDs to Strings. We need to convert every string into 
@@ -52,7 +64,7 @@ a list of tokens (during the process also remove stopwords from the string):
 ```python
 from models.utils import wmd_utils
 
-# copnvert the [ID-to-string] dict to [ID-to-token-list] dict
+# convert the [ID-to-string] dict to [ID-to-token-list] dict
 candidate_dict = wmd_utils.sent_dict_to_tok_dict(sent_dict)
 ```
 
@@ -109,6 +121,7 @@ TODO: how to generate `pair_dict`
         
 model.evaluate_model(candidate_dict, pair_dict)
 ```
+
 
 
 ## Code Layout

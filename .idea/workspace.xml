@@ -126,9 +126,6 @@
       <change beforePath="$PROJECT_DIR$/../hw3_Q1/src/main/java/test" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/utils/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/utils/wmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/utils/wmd_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/wmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/wmd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/msr_para_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/msr_para_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../v4-master/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../v4-master/.eslintrc" beforeDir="false" />
@@ -327,6 +324,9 @@
   <component name="ExportToHTMLSettings">
     <option name="printScope" value="1" />
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="sentSim" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -574,7 +574,7 @@
       <workItem from="1584224972506" duration="12913000" />
       <workItem from="1584292384636" duration="5597000" />
       <workItem from="1584375658143" duration="12048000" />
-      <workItem from="1584458969897" duration="18883000" />
+      <workItem from="1584458969897" duration="20207000" />
     </task>
     <servers />
   </component>

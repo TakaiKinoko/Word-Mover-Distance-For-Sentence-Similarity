@@ -13,8 +13,6 @@ Data source:
 Performance metrics:
     - accuracy
     - F1 score
-
-@author: Fang
 """
 
 from models.baseline import Baseline
