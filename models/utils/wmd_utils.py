@@ -11,7 +11,7 @@ import pulp
 from scipy.spatial.distance import euclidean
 from gensim.utils import tokenize
 from itertools import product, combinations
-from models.utils.utils import tokens_to_fracdict, get_token_list
+from models.utils.common import tokens_to_fracdict, get_token_list
 
 
 def sent_dict_to_tok_dict(sent_dict):

@@ -13,7 +13,7 @@ class WMD(ModelInterface):
     """
     Word-Mover-Distance model
     """
-    def __init__(self, test_data, sent_dict, pair_dict):
+    def __init__(self):
         """
         Default constructor of the Word-Mover-Distance model
 
@@ -38,7 +38,7 @@ class WMD(ModelInterface):
 
     def compute_sim_list(self, target: list, candidates: dict) -> list:
         """
-        TODO : untested
+        TODO : test it!!!
         Compute the word mover distance between target and every
         :param target: target sentence, which is a token list.
         :param candidates: a dict mapping unique sentence IDs to their corresponding token list.

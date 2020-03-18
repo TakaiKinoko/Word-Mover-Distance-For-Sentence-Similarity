@@ -40,7 +40,7 @@ class TestWMD:
         # parse MSR data
         test_data, sent_dict, pair_dict = parse()
         # word mover model -- take long to load the model!
-        wm_model = WMD(test_data, sent_dict, pair_dict)
+        wm_model = WMD()
         # copnvert the ID->String dict to ID-> token dict
         candidate_dict = wmd_utils.sent_dict_to_tok_dict(sent_dict)
         wm_model.evaluate_model(candidate_dict, pair_dict)
