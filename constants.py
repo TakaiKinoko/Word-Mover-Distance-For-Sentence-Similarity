@@ -1,3 +1,8 @@
+# Semantic Similarity Library: Constants
+#
+# Copyright (C) 2019-2020 MotleyWorks
+# Author: Fang Han <fang@buymecoffee.co>
+
 """
 Namespace for Global Constants e.g. file paths
 """

@@ -1,7 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="091dc330-7c9a-4bc5-a1e7-c1f8def60613" name="Default Changelist" comment="" />
+    <list default="true" id="091dc330-7c9a-4bc5-a1e7-c1f8def60613" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/content/codeblock.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/content/codeblock/1-index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/content/index.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/content/introduction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/gatsby-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/gatsby-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/gatsby-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/netlify.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/CommunityAuthor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/GithubLink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/YoutubeEmbed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/NextPrevious.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/images/closed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/images/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/images/help.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/images/opened.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/images/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/mdxComponents/LiveProvider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/mdxComponents/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/mdxComponents/codeBlock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/mdxComponents/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/mdxComponents/loading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/rightSidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/search/hitComps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/search/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/search/input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/search/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/sidebar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/sidebar/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/sidebar/treeNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/components/themeProvider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/custom-sw-code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/pwa-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/templates/docs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Coding_Problems/src/utils/algolia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB_hw3/edu/.idea/sbt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB_hw3/edu/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/input/handout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/Entry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/aggregation/Aggregate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/aggregation/GroupAgg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/aggregation/Moving.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/algebra/Cartesian.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/algebra/CartesianArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/algebra/Concat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/algebra/Join.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/algebra/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/algebra/Select.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/btree/BTException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/btree/BTIteratorIF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/btree/BTKeyValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/btree/BTNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/btree/BTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/btree/SimpleFileWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/db/Database.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/db/DynamicTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/db/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/index/BTTestIteratorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/index/Btree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/index/BtreeKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/index/Hash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/io/IO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/io/QueryParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/parser/Lexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/parser/NonTerminal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/parser/Or.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/parser/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/util/GroupKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/util/Parens.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/util/PrettyPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/util/Sort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/util/SortGroupKeyMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database_Fall19/peachyDB/src/main/java/util/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IPM/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IPM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/input/short.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/src/main/java/BTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/src/main/java/LinearProbingHashST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/src/main/java/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/src/main/java/StdIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/src/main/java/StdOut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/src/main/java/experiment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/.idea/sbt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/hw3_Q1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/input/commands.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/src/main/java/BtreeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/src/main/java/HashTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/src/main/java/TimingExp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/src/main/java/pair/IPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/src/main/java/pair/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3_Q1/src/main/java/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/utils/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/utils/wmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/utils/wmd_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/wmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/wmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/msr_para_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/msr_para_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/.nvmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/gatsby-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/gatsby-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/gatsby-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/gatsby-ssr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/prettier.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/email.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/featured.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/head.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/hero.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/codepen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/external.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/folder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/fork.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/formattedIcon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/github.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/instagram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/linkedin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/location.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/logo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/star.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/icons/twitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/jobs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/projects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/components/social.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/about/Fang.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/about/FangFancy.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/about/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/contact/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/FOREX/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/FOREX/paper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/HMDA/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/HMDA/website_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/HMDA/website_recommendation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/HalcyonTheme/demo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/HalcyonTheme/halcyon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/HalcyonTheme/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/HalcyonTheme/proposal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/PinSimple/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/featured/PinSimple/pin-simple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/hero/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/BDA/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/BDS/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/Compiler/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/DB/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/DCN/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/FA/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/GPU/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/ML/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/Math/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/NLP/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/OS/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/jobs/PL/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/AMFM/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/AppleMusicEmbedPlayer/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/CourseSource/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/CrowdDJ/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/DB/blistabloc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/DB/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/Fontipsums/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/HalcyonTheme/demo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/HalcyonTheme/halcyon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/HalcyonTheme/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/IPM/google-keep-clone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/IPM/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/Interventions/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/JetBlueHumanKinda/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/LonelyPlanetDBMS/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/MaxEnt/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/NUWIT/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/OneCardForAll/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/ReactResume/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/Screentime/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/SpotifyProfile/demo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/SpotifyProfile/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/SurfVideos/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/WeatherWidget/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/content/projects/myNEURedesign/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-LightItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-LightItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-MediumItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-MediumItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-RegularItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-RegularItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-RegularItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Semibold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-Semibold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-SemiboldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-SemiboldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/Calibre/Calibre-SemiboldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-MediumItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-MediumItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-RegularItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-RegularItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-RegularItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-Semibold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-Semibold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-SemiboldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-SemiboldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/fonts/SFMono/SFMono-SemiboldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/demo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/android-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/android-icon-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/android-icon-36x36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/android-icon-48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/android-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/android-icon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-114x114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-120x120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-57x57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-60x60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-76x76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon-precomposed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/favicon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/ms-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/ms-icon-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/ms-icon-310x310.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/favicons/ms-icon-70x70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/og.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/images/og@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/pages/404.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/GlobalStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/Heading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/InlineLink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/Main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/Section.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/fonts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/mixins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/styles/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/src/utils/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/static/resume 2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/static/resume.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/static/slides/intro-to-webdev-workshop.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../v4-master/yarn.lock" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,7 +326,7 @@
   </component>
   <component name="ExportToHTMLSettings">
     <option name="printScope" value="1" />
-    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/.." />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -20,7 +337,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -46,6 +363,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models/utils" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/test" />
@@ -256,6 +574,7 @@
       <workItem from="1584224972506" duration="12913000" />
       <workItem from="1584292384636" duration="5597000" />
       <workItem from="1584375658143" duration="12048000" />
+      <workItem from="1584458969897" duration="18883000" />
     </task>
     <servers />
   </component>
@@ -264,6 +583,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.tsv" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="100" width="800" height="717" key="#Intentions" timestamp="1582404385913">
@@ -283,10 +613,10 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="408" y="177" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.823@0.23.1440.823" timestamp="1582570152104" />
-    <state x="536" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584389730520">
+    <state x="536" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584474318709">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="536" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.823@0.23.1440.823" timestamp="1584389730520" />
+    <state x="536" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.823@0.23.1440.823" timestamp="1584474318709" />
     <state x="762" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/2048.-319.1152.2025/0.23.2048.1075@0.23.2048.1075" timestamp="1584381349659" />
     <state width="1398" height="544" key="GridCell.Tab.0.bottom" timestamp="1582412278293">
       <screen x="0" y="23" width="1440" height="823" />

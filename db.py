@@ -1,3 +1,8 @@
+# Semantic Similarity Library:
+#
+# Copyright (C) 2019-2020 MotleyWorks
+# Author: Fang Han <fang@buymecoffee.co>
+
 """
 Utility Class that provides abstraction for the installation, initialization of database, as well as the insertion and
 retrieval of query data.
@@ -6,11 +11,11 @@ Right now just using Pandas to read from and save to a csv file
 
 @author: Fang
 """
-import pandas as pd
-
-class DataBase:
-    def __init__(self, name):
-        queries = pd.read_csv('data/query_start.csv')
+# import pandas as pd
+#
+# class DataBase:
+#     def __init__(self, name):
+#         queries = pd.read_csv('data/query_start.csv')
 
 """
 HOW TO USE SQLITE

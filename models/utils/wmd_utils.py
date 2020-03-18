@@ -1,14 +1,52 @@
+# Semantic Similarity Library: Word-Mover-Distance model utility functions
+#
+# Copyright (C) 2019-2020 MotleyWorks
+# Author: Fang Han <fang@buymecoffee.co>
+
 """
 Utility static functions
 """
 
 import pulp
-from collections import defaultdict
 from scipy.spatial.distance import euclidean
 from gensim.utils import tokenize
-from gensim.parsing.preprocessing import remove_stopwords
 from itertools import product, combinations
-from models.utils import tokens_to_fracdict, clean_sentences
+from models.utils.common import tokens_to_fracdict, get_token_list
+
+
+def sent_dict_to_tok_dict(sent_dict):
+    """
+
+    :param sent_dict: a dict mapping sentence IDs to their string representations
+    :return: a dict mapping sentence IDs to their list of tokens
+    """
+    # map ID to cleaned sentences
+    cleaned_sent_dict = {}
+    for k in sent_dict.keys():  # ID to sentences
+        try:
+            cleaned_sent_dict[k] = get_token_list(sent_dict[k])
+        except TypeError:
+            continue
+    return cleaned_sent_dict
+
+
+def compute_scores_dict(candidates_dict, w2vmodel):
+    """
+    Given a dict from sentence ID to sentence token list, return a dict that maps from any sentence of ID1 in the
+    candidates_dict to a dict that maps all sentence of ID2 that is not ID1 to a float that represents the
+    word mover distance between ID1 and ID2.
+
+    :param candidates_dict: a dict of sentences mapping its id to its list of tokens
+    :param w2vmodel: word-to-vec model
+    :return: a dict mapping sentence id to a list of scores (wmd) with all sentences from the candidates_dict
+            except for itself
+    """
+    # compute scores for the cartesian product of all sentences
+    # THE FUNCTION BELOW TAKES VERY LONG, WILL REPORT PROGRESS
+    return compute_scores_batch(candidates_dict, w2vmodel)
+    # self.match_dict = self.match_each_sent(cleaned_sent_dict)
+    # evaluate accuracy
+    # print("Accuracy %f" % (self.evaluate_wmd_model()))
 
 
 def word_mover_distance_probspec(first_sent_tokens, second_sent_tokens, wvmodel, lpFile=None):
@@ -75,15 +113,6 @@ def word_mover_distance(first_sent_tokens, second_sent_tokens, wvmodel, lpFile=N
     return pulp.value(prob.objective)
 
 
-def get_token_list(query_string):
-    """
-
-    :param query_string:
-    :return:
-    """
-    return list(tokenize(remove_stopwords(query_string)))
-
-
 def append_to_sentences(sentences, string):
     """
 
@@ -128,37 +157,6 @@ def get_match(target, candidates, w2vmodel):
     return candidates[min(scores, key=scores.get)]
 
 
-"""
-def get_match_from_dict(target_list, candidates_dict, wm_model):
-
-    Given a word mover model, a target sentence and a list of candidates, return a sentence from candidates that matches
-    the target most closely, meaning:
-        min(word_mover_distance(target, s) for all s in candidates)
-
-    :param target_list: a list of tokens
-    :param candidates_dict: a dict from ID to list of tokens
-    :param wm_model:
-    :return:
-
-    # a dict mapping sentence id to a list of scores
-    scores_dict = {id: [] for id in candidates_dict.keys()}
-    #
-
-    # heapify the lists
-
-
-    # parse target string into a list of tokens
-    scores = {k: pulp.value(word_mover_distance_probspec(target_list, candidates_dict[k], wm_model.w2vmodel).objective) for
-              k in
-              candidates_dict.keys()}
-    #TODO generate a cartesian product of all pairs, compute and store the score in a table -- WHAT IS USED ABOVE IS EXTREMELY INEFFICIENT
-    # use min-heap to get the key to the second smallest wmd -- the smallest is itself
-    import heapq
-    return heapq.nsmallest(2, scores, key=scores.get)[-1]
-    # return min(scores, key=scores.get) # return the key
-    """
-
-
 def compute_scores_batch(candidates_dict, w2vmodel):
     """
     Given a dict from sentence ID to sentence token list, return a dict that maps from any sentence of ID1 in the
@@ -166,7 +164,7 @@ def compute_scores_batch(candidates_dict, w2vmodel):
     word mover distance between ID1 and ID2.
 
     :param candidates_dict: a dict of sentences mapping its id to its list of tokens
-    :param w2vmodel: word mover model
+    :param w2vmodel: word-to-vec model
     :return: a dict mapping sentence id to a list of scores (wmd) with all sentences from the candidates_dict
             except for itself
     """
