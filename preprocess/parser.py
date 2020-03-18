@@ -17,9 +17,7 @@ def parse(data_path=constants.msr_para_test_path, delimiter='\t'):
     """
     Define MSR data path and read into tsv into data
     """
-    #msr_path = data_path
     # read tsv file -- need to specify quoting otherwise parsing error will occur
-    #self.data = pd.read_csv(self.msr_path, delimiter='\t', quoting=csv.QUOTE_NONE, encoding='utf-8')
     data = load_data(data_path, delimiter)
     # filter out only matching pairs
     data = converter.filter_positives(data, 1) # for part1 test set
